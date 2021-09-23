@@ -1,0 +1,11 @@
+---
+- name: JDK installed
+  hosts: all
+  vars:
+      ansible_python_interpreter: /usr/bin/python3	
+  become: yes
+  tasks:
+  - name: JDK version 8installed
+    apt:
+      name: vim
+      state: latest
